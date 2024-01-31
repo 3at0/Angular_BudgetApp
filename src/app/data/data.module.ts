@@ -10,6 +10,9 @@ import { DataEntryComponent } from './data-entry/data-entry.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    DataEntryComponent
   ]
 })
 export class DataModule { }
