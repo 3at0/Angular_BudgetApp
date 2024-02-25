@@ -19,14 +19,17 @@ describe('DataStorageService', () => {
   });
 
   describe('loadFile', () => {
-    
-      it('should exist', () => {
-        expect(service.loadFile).toBeTruthy();
-      });
 
-      it('should check whether entries array is empty');
+    it('should exist', () => {
+      expect(service.loadFile).toBeTruthy();
+    });
 
-      
+    it('should load a file if it exists', () => {
+      // const loadFileSpy = spyOn(DataStorageService, 'loadFile');
+      // expect(service.loadFile).toHaveBeenCalledWith('data.json');
+    });
+
+    it('should create a file if none exists');
   });
 
   //describe('')
