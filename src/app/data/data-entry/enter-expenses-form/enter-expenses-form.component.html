@@ -1,0 +1,24 @@
+<table>
+    <thead>
+        <tr>
+            <td>Amount</td>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let expense of enteredData">
+            <td>{{ expense }}</td>
+        </tr>
+    </tbody>
+</table>
+
+<form #myForm="ngForm" (ngSubmit)="onExpenseEntered()">
+    <input
+        [(ngModel)]="currentAmount"
+        name="amount"
+        type="text"
+        placeholder="Enter amount"
+        #currentExpense="ngModel"
+    />
+    <button type="submit">Enter</button>
+</form>
